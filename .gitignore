@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Claude
+.claude/
+*.local.json
+
+# IDE
+.vscode/
+.idea/
+
+# Windows
+Thumbs.db

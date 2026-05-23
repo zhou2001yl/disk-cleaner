@@ -3,7 +3,26 @@
     "allow": [
       "Bash(python \"磁盘清理工具.py\")",
       "Bash(python -c \"import ast; ast.parse\\(open\\('磁盘清理工具.py', encoding='utf-8'\\).read\\(\\)\\); print\\('Syntax OK'\\)\")",
-      "Bash(taskkill /f /im python.exe)"
+      "Bash(taskkill /f /im python.exe)",
+      "Bash(gh auth *)",
+      "Bash(where gh *)",
+      "Bash(git config *)",
+      "Bash(where choco *)",
+      "Bash(choco install *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" --netrc-optional -X POST https://api.github.com/user/repos -H \"Content-Type: application/json\" -d '{\"name\":\"disk-cleaner\",\"private\":false,\"description\":\"一键磁盘清理工具 - 垃圾清理与文件查找\",\"auto_init\":false}')",
+      "Bash(unzip -l /c/Users/A2001/Downloads/gh_2.63.2_windows_amd64.zip)",
+      "Bash(cmd.exe /c 'echo list | findstr GitHub')",
+      "Bash(cmd.exe /c 'git credential-manager get 2>&1')",
+      "Bash(curl -sL -o /c/Users/A2001/Downloads/gh.zip \"https://github.com/cli/cli/releases/download/v2.63.2/gh_2.63.2_windows_amd64.zip\")",
+      "Bash(python -c ' *)",
+      "Bash(ping -n 1 github.com)",
+      "Bash(powershell -Command \"Get-ItemProperty -Path 'HKCU:\\\\Software\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Internet Settings' | Select-Object ProxyServer, ProxyEnable\")",
+      "Bash(powershell -Command 'try { $wc = New-Object System.Net.WebClient; $wc.DownloadString\\('\\\\''https://api.github.com/zen'\\\\''\\); Write-Host '\\\\''API OK'\\\\'' } catch { Write-Host '\\\\''API FAIL: '\\\\'' $_.Exception.Message }')",
+      "Bash(powershell -Command 'try {   [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;   $req = [System.Net.HttpWebRequest]::Create\\('\\\\''https://github.com'\\\\''\\);   $req.Timeout = 10000;   $resp = $req.GetResponse\\(\\);   Write-Host '\\\\''Status: '\\\\'' $resp.StatusCode;   $resp.Close\\(\\) } catch { Write-Host '\\\\''Error: '\\\\'' $_.Exception.Message }')",
+      "Bash(git ls-remote *)",
+      "Bash(ssh -T git@github.com)",
+      "Bash(ssh -o StrictHostKeyChecking=accept-new -T git@github.com)",
+      "Bash(powershell -Command 'try {   Add-Type -AssemblyName System.Net.Http;   $handler = New-Object System.Net.Http.HttpClientHandler;   $handler.ServerCertificateCustomValidationCallback = { $true };   $client = New-Object System.Net.Http.HttpClient\\($handler\\);   $client.Timeout = New-Object System.TimeSpan\\(0,0,30\\);   $resp = $client.GetAsync\\('\\\\''https://github.com'\\\\''\\).Result;   Write-Host $resp.StatusCode; } catch { Write-Host '\\\\''Error: '\\\\'' $_.Exception.Message }')"
     ]
   }
 }
