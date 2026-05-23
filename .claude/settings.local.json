@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python \"磁盘清理工具.py\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('磁盘清理工具.py', encoding='utf-8'\\).read\\(\\)\\); print\\('Syntax OK'\\)\")",
+      "Bash(taskkill /f /im python.exe)"
+    ]
+  }
+}
